@@ -2,7 +2,7 @@ import React from 'react'
 import { Dimensions } from 'react-native'
 import styled from 'styled-components/native'
 
-import { VStack, Spacing, Color, ColorScheme, Callout, applyVSpacer } from '../primitives'
+import { VStack, Spacing, Color, ColorScheme, Callout, applyVSpacer } from '../../primitives'
 
 // MARK: - Interfaces
 interface CardCaptureGuidelineProps {

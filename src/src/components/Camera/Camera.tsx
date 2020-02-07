@@ -4,8 +4,8 @@ import { RNCamera } from 'react-native-camera'
 import { Icon } from 'react-native-elements'
 import styled from 'styled-components/native'
 
-import { Color, ColorScheme, VStack, HStack, Spacing, Spacer } from '../primitives'
-import { SafeAreaView } from '../components'
+import { Color, ColorScheme, VStack, HStack, Spacing, Spacer } from '../../primitives'
+import { SafeAreaView } from '../../components'
 
 // MARK: - Interfaces
 interface CameraProps {

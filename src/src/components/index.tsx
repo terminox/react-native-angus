@@ -10,8 +10,7 @@ import { PrimaryScreenHeader, ScreenHeader } from './ScreenHeader'
 import useTextField from './useTextField'
 import { LineSeparator, SpaceSeparator } from './Separator'
 import SectionHeader from './SectionHeader'
-import Camera from './Camera'
-import CardCaptureGuideline from './CardCaptureGuideline'
+import { Camera, CardCaptureGuideline, SelfieCaptureGuideline } from './Camera'
 
 export {
   PrimaryBackground,
@@ -32,5 +31,6 @@ export {
   SpaceSeparator,
   SectionHeader,
   Camera,
-  CardCaptureGuideline
+  CardCaptureGuideline,
+  SelfieCaptureGuideline
 }
