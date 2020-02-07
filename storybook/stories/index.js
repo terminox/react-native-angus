@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 
 import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
@@ -10,7 +10,7 @@ import CenterView from './CenterView';
 import Welcome from './Welcome';
 
 import Angus from '../../src'
-const { LargeTitle, ScreenHeader } = Angus
+const { LargeTitle, ScreenHeader, Camera } = Angus
 
 // storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -28,17 +28,17 @@ const { LargeTitle, ScreenHeader } = Angus
 //   ));
 
 storiesOf('LargeTitle')
-    .add('English', () => (
-      <LargeTitle>Welcome to Angus</LargeTitle>
-    ))
-    .add('Thai', () => (
-      <LargeTitle>ยินดีต้อนรับสู่แองกัส</LargeTitle>
-    ))
+  .add('English', () => (
+    <LargeTitle>Welcome to Angus</LargeTitle>
+  ))
+  .add('Thai', () => (
+    <LargeTitle>ยินดีต้อนรับสู่แองกัส</LargeTitle>
+  ))
 
 storiesOf('Screen Header')
-    .add('Secondary - English', () => (
-      <ScreenHeader title="Welcome to Angus" subtitle="The most delicious UIKit on Earth" />
-    ))
-    .add('Secondary - Thai', () => (
-      <ScreenHeader title="พบกับแองกัส" subtitle="UIKit ที่จะทำให้คุณน้ำลายสอ" />
-    ))
+  .add('Secondary - English', () => (
+    <ScreenHeader title="Welcome to Angus" subtitle="The most delicious UIKit on Earth" />
+  ))
+  .add('Secondary - Thai', () => (
+    <ScreenHeader title="พบกับแองกัส" subtitle="UIKit ที่จะทำให้คุณน้ำลายสอ" />
+  ))

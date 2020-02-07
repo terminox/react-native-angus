@@ -59,7 +59,9 @@ const Theme = {
     backgroundSecondary: ColorPalette.white,
     backgroundTertiary: ColorPalette.white,
     buttonBackgroundPrimary: ColorPalette.jittaBlue,
-    linkPrimary: ColorPalette.jittaBlue
+    linkPrimary: ColorPalette.jittaBlue,
+    cameraBackground: ColorPalette.black,
+    cameraButton: ColorPalette.white,
   },
 
   gradients: {
@@ -89,7 +91,9 @@ export enum ColorScheme {
   backgroundSecondary = 'backgroundSecondary',
   backgroundTertiary = 'backgroundTertiary',
   buttonBackgroundPrimary = 'buttonBackgroundPrimary',
-  linkPrimary = 'linkPrimary'
+  linkPrimary = 'linkPrimary',
+  cameraBackground = 'cameraBackground',
+  cameraButton = 'cameraButton',
 }
 
 export enum GradientScheme {

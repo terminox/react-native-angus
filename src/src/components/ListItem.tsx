@@ -1,9 +1,8 @@
 import React, { ReactElement } from 'react'
 import { View } from 'react-native'
-import styled from 'styled-components/native'
 
-import { HStack, VStack } from '../primitives/Stack'
-import { Headline, Caption, applyHSpacer, Spacing } from '../primitives'
+import { HStack, VStack, Headline, Caption, applyHSpacer, Spacing } from '../primitives'
+import { ListItemContainer } from '../components'
 
 // MARK: - Interfaces
 interface ListItemProps {
@@ -11,7 +10,6 @@ interface ListItemProps {
   subtitle?: string
   leadingElement?: ReactElement
   trailingElement?: ReactElement
-  isEnabled: boolean
   action?(): void
 }
 
@@ -22,7 +20,7 @@ const ListItem: React.FC<ListItemProps> = props => {
   const trailingSpacing = trailingElement ? Spacing.medium : Spacing.zero
 
   return (
-    <Container>
+    <ListItemContainer>
       <HStack alignItems="center">
         {leadingElement ?? <View />}
         {applyHSpacer(leadingSpacing)}
@@ -38,17 +36,8 @@ const ListItem: React.FC<ListItemProps> = props => {
         {applyHSpacer(trailingSpacing)}
         {trailingElement ?? <View />}
       </HStack>
-    </Container>
+    </ListItemContainer>
   )
 }
 
 export default ListItem
-
-// MARK: - Components
-const Container = styled(HStack).attrs({
-  alignItems: 'center',
-  justifyContent: 'space-between'
-})`
-  padding-horizontal: ${Spacing.semiLarge};
-  padding-vertical: ${Spacing.small};
-`
