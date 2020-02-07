@@ -11,6 +11,7 @@ import useTextField from './useTextField'
 import { LineSeparator, SpaceSeparator } from './Separator'
 import SectionHeader from './SectionHeader'
 import Camera from './Camera'
+import CardCaptureGuideline from './CardCaptureGuideline'
 
 export {
   PrimaryBackground,
@@ -30,5 +31,6 @@ export {
   LineSeparator,
   SpaceSeparator,
   SectionHeader,
-  Camera
+  Camera,
+  CardCaptureGuideline
 }
