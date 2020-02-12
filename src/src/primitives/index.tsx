@@ -1,7 +1,7 @@
 import { Color, ColorScheme, Gradient, GradientScheme } from './Color'
 import Font, { FontSize, FontWeight } from './Font'
 import Spacing from './Spacing'
-import { applyHSpacer, applyVSpacer } from './Spacer'
+import { Spacer, applyHSpacer, applyVSpacer } from './Spacer'
 import { HStack, VStack } from './Stack'
 import {
   PrimaryTitle,
@@ -24,6 +24,7 @@ export {
   FontSize,
   FontWeight,
   Spacing,
+  Spacer,
   applyHSpacer,
   applyVSpacer,
   HStack,
