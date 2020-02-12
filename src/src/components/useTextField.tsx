@@ -11,7 +11,7 @@ const TextField = styled(RNETextField).attrs({
   containerStyle: {
     width: '100%',
     paddingHorizontal: Spacing.semiLarge,
-    paddingBottom: Spacing.medium
+    // paddingBottom: Spacing.medium
   },
   fontSize: FontSize.s,
   titleFontSize: FontSize.xs,
@@ -19,6 +19,7 @@ const TextField = styled(RNETextField).attrs({
   tintColor: Color(ColorScheme.textFieldPrimary),
   baseColor: Color(ColorScheme.placeholder),
   errorColor: Color(ColorScheme.textFieldNegative),
+  textColor: Color(ColorScheme.labelPrimary),
   placeholderTextColor: Color(ColorScheme.placeholder),
   lineWidth: 1,
   disabledLineWidth: 1,
