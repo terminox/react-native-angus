@@ -7,12 +7,14 @@
     "assets"
   ],
   "scripts": {
+    "init-angus": "rm -rf node_modules/ && yarn install && cd ios/ && pod install && cd ..",
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "ios": "react-native run-ios --simulator \"iPhone 11 Pro\"",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "storybook": "start-storybook -p 7007"
+    "storybook": "start-storybook -p 7007",
+    "postinstall": "rm node_modules/@storybook/addons/dist/hooks.js && cp fixed-file-storybook.js node_modules/@storybook/addons/dist/hooks.js"
   },
   "dependencies": {
     "formik": "^2.1.3",
