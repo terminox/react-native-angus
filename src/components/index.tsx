@@ -12,6 +12,7 @@ import { LineSeparator, SpaceSeparator } from './Separator'
 import SectionHeader from './SectionHeader'
 import { Camera, CardCaptureGuideline, SelfieCaptureGuideline } from './Camera'
 import { GradientText, GradientBackground } from './Gradient'
+import TextInput from './TextInput'
 
 export {
   PrimaryBackground,
@@ -35,5 +36,6 @@ export {
   CardCaptureGuideline,
   SelfieCaptureGuideline,
   GradientText,
-  GradientBackground
+  GradientBackground,
+  TextInput
 }

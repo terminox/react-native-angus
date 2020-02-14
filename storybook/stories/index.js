@@ -48,7 +48,7 @@ const {
   SafeAreaView,
   PrimaryScreenHeader,
   ScreenHeader,
-  useTextField,
+  TextInput,
   LineSeparator,
   SpaceSeparator,
   SectionHeader,
@@ -282,5 +282,10 @@ storiesOf('Component')
       <Paragraph>
         This is a Paragraph contain a very very long text xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
       </Paragraph>
+    </GroupView>
+  ))
+  .add('TextInput', () => (
+    <GroupView>
+      <TextInput placeholder="This is TextInput"/>
     </GroupView>
   ))
