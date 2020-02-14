@@ -4,7 +4,7 @@ import { Field } from 'formik'
 import { TextField as RNETextField } from 'react-native-material-textfield'
 import styled from 'styled-components/native'
 
-import { Font, FontSize, Color, ColorScheme, Spacing } from '../primitives'
+import { Font, FontSize, Color, Spacing } from '../primitives'
 
 // MARK: - Base
 const TextField = styled(RNETextField).attrs({
@@ -16,11 +16,11 @@ const TextField = styled(RNETextField).attrs({
   fontSize: FontSize.s,
   titleFontSize: FontSize.xs,
   labelFontSize: FontSize.xs,
-  tintColor: Color(ColorScheme.textFieldPrimary),
-  baseColor: Color(ColorScheme.placeholder),
-  errorColor: Color(ColorScheme.textFieldNegative),
-  textColor: Color(ColorScheme.labelPrimary),
-  placeholderTextColor: Color(ColorScheme.placeholder),
+  tintColor: Color(Color.Scheme.textFieldPrimary),
+  baseColor: Color(Color.Scheme.placeholder),
+  errorColor: Color(Color.Scheme.textFieldNegative),
+  textColor: Color(Color.Scheme.labelPrimary),
+  placeholderTextColor: Color(Color.Scheme.placeholder),
   lineWidth: 1,
   disabledLineWidth: 1,
   activeLineWidth: 1,

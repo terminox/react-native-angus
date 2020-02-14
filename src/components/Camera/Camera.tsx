@@ -4,7 +4,7 @@ import { RNCamera } from 'react-native-camera'
 import { Icon } from 'react-native-elements'
 import styled from 'styled-components/native'
 
-import { Color, ColorScheme, VStack, HStack, Spacing, Spacer } from '../../primitives'
+import { Color, VStack, HStack, Spacing, Spacer } from '../../primitives'
 import { SafeAreaView } from '../../components'
 
 // MARK: - Interfaces
@@ -29,7 +29,7 @@ const Camera: React.FC<CameraProps> = props => {
   return (
     <SafeAreaView
       forceInset={{ top: 'never' }}
-      style={{ backgroundColor: Color(ColorScheme.cameraBackground) }}>
+      style={{ backgroundColor: Color(Color.Scheme.cameraBackground) }}>
       <RNCamera
         ref={ref}
         flashMode={flashMode}
@@ -64,11 +64,11 @@ export default Camera
 const FooterContainer = styled(HStack)`
   padding-vertical: ${Spacing.medium};
   width: 100%;
-  background-color: ${Color(ColorScheme.cameraBackground)};
+  background-color: ${Color(Color.Scheme.cameraBackground)};
 `
 
 const ShutterButtonOuter = styled.View`
-  background-color: ${Color(ColorScheme.cameraButton)};
+  background-color: ${Color(Color.Scheme.cameraButton)};
   width: 74px;
   border-radius: 37px;
   aspect-ratio: 1;
@@ -77,7 +77,7 @@ const ShutterButtonOuter = styled.View`
 `
 
 const ShutterButtonInner = styled.View`
-  background-color: ${Color(ColorScheme.cameraBackground)};
+  background-color: ${Color(Color.Scheme.cameraBackground)};
   width: 62px;
   border-radius: 31px;
   aspect-ratio: 1;
@@ -86,7 +86,7 @@ const ShutterButtonInner = styled.View`
 `
 
 const ShutterButton = styled.TouchableOpacity`
-  background-color: ${Color(ColorScheme.cameraButton)};
+  background-color: ${Color(Color.Scheme.cameraButton)};
   width: 56px;
   border-radius: 28px;
   aspect-ratio: 1;

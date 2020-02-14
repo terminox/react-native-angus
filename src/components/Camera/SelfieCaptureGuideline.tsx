@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/native'
 
-import { Color, ColorScheme, applyVSpacer, Spacing } from '../../primitives'
+import { Color, applyVSpacer, Spacing } from '../../primitives'
 
 // MARK: - Main
 const SelfieCaptureGuideline: React.SFC<{}> = () => {
@@ -28,7 +28,7 @@ const GuidelineContainer = styled.View.attrs({
 const FaceGuideline = styled.View`
   width: 70%;
   height: 40%;
-  border-color: ${Color(ColorScheme.separatorPrimary)};
+  border-color: ${Color(Color.Scheme.separatorPrimary)};
   border-width: 2px;
   border-radius: 500px;
   border-style: dashed;
@@ -38,7 +38,7 @@ const FaceGuideline = styled.View`
 const CardGuideline = styled.View`
   width: 80%;
   height: 35%;
-  border-color: ${Color(ColorScheme.separatorPrimary)};
+  border-color: ${Color(Color.Scheme.separatorPrimary)};
   border-width: 2px;
   border-radius: 8px;
   border-style: dashed;

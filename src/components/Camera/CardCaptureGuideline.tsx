@@ -2,7 +2,7 @@ import React from 'react'
 import { Dimensions } from 'react-native'
 import styled from 'styled-components/native'
 
-import { VStack, Spacing, Color, ColorScheme, Callout, applyVSpacer } from '../../primitives'
+import { VStack, Spacing, Color, Callout, applyVSpacer } from '../../primitives'
 
 // MARK: - Interfaces
 interface CardCaptureGuidelineProps {
@@ -61,7 +61,7 @@ const Guideline = styled.View.attrs({
   flex: 1
 })`
   aspect-ratio: 1.6;
-  border-color: ${Color(ColorScheme.separatorPrimary)};
+  border-color: ${Color(Color.Scheme.separatorPrimary)};
   border-width: 2px;
   border-radius: 8px;
   border-style: dashed;
