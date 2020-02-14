@@ -1,7 +1,7 @@
 import { ReactText } from 'react'
 
 // MARK: - Palette
-const ColorPalette = {
+export const ColorPalette = {
   caribbeanGreen: '#00C5AC',
   black: '#000000',
   white: '#FFFFFF',
@@ -66,7 +66,8 @@ const Theme = {
 
   gradients: {
     labelGradient: GradientPallete.jittaWealthGradient,
-    buttonBackgroundGradientPrimary: GradientPallete.jittaWealthGradient
+    buttonBackgroundGradientPrimary: GradientPallete.jittaWealthGradient,
+    backgroundGradient: GradientPallete.jittaWealthGradient
   }
 }
 
@@ -98,7 +99,8 @@ export enum ColorScheme {
 
 export enum GradientScheme {
   labelGradient = 'labelGradient',
-  buttonBackgroundGradientPrimary = 'buttonBackgroundGradientPrimary'
+  buttonBackgroundGradientPrimary = 'buttonBackgroundGradientPrimary',
+  backgroundGradient = 'backgroundGradient'
 }
 
 // MARK: - Main
