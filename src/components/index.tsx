@@ -11,6 +11,8 @@ import useTextField from './useTextField'
 import { LineSeparator, SpaceSeparator } from './Separator'
 import SectionHeader from './SectionHeader'
 import { Camera, CardCaptureGuideline, SelfieCaptureGuideline } from './Camera'
+import { GradientText, GradientBackground } from './Gradient'
+import TextInput from './TextInput'
 
 export {
   PrimaryBackground,
@@ -32,5 +34,8 @@ export {
   SectionHeader,
   Camera,
   CardCaptureGuideline,
-  SelfieCaptureGuideline
+  SelfieCaptureGuideline,
+  GradientText,
+  GradientBackground,
+  TextInput
 }
