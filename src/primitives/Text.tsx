@@ -4,13 +4,13 @@ import styled from 'styled-components/native'
 import LinearGradient from 'react-native-linear-gradient'
 
 import Font, { FontSize, FontWeight } from './Font'
-import { Color, Gradient, ColorScheme, GradientScheme } from './Color'
+import { Color, Gradient } from './Color'
 import { HStack } from './Stack'
 
 // MARK: - Base
 const Text = styled.Text`
   font-family: ${Font.default};
-  color: ${Color(ColorScheme.labelPrimary)};
+  color: ${Color(Color.Scheme.labelPrimary)};
 `
 
 // MARK: - Interfaces
@@ -27,12 +27,12 @@ const boldFontWeight = Platform.select({
 const ExtraLargeTitle = styled(Text)`
   font-size: ${FontSize.xxl}px;
   font-weight: ${boldFontWeight};
-  color: ${Color(ColorScheme.titlePrimary)};
+  color: ${Color(Color.Scheme.titlePrimary)};
 `
 
 export const PrimaryTitle: React.SFC<TextProps> = props => {
   const { children } = props
-  const { colors, locations, angle } = Gradient(GradientScheme.labelGradient)
+  const { colors, locations, angle } = Gradient(Gradient.Scheme.labelGradient)
 
   if (Platform.OS === 'android') {
     return <ExtraLargeTitle>{children}</ExtraLargeTitle>
@@ -68,7 +68,7 @@ export const Headline = styled(Text)`
 
 export const Subheadline = styled(Text)`
   font-size: ${FontSize.s}px;
-  color: ${Color(ColorScheme.labelSecondary)};
+  color: ${Color(Color.Scheme.labelSecondary)};
 `
 
 export const Body = styled(Text)`

@@ -13,10 +13,7 @@ import Angus from '../../src'
 const {
   // Primitive
   Color,
-  ColorPalette,
-  ColorScheme,
   Gradient,
-  GradientScheme,
   Font,
   FontSize,
   FontWeight,
@@ -113,42 +110,42 @@ storiesOf('Primitive', module)
   ))
   .add('Color Palette', () => (
     <ScrollView>
-      <ColorItem color={ColorPalette.caribbeanGreen} name='caribbeanGreen' />
-      <ColorItem color={ColorPalette.black} name='black' />
-      <ColorItem color={ColorPalette.white} name='white' />
-      <ColorItem color={ColorPalette.baliHai} name='baliHai' />
-      <ColorItem color={ColorPalette.pickledBluewood} name='pickledBluewood' />
-      <ColorItem color={ColorPalette.geyser} name='geyser' />
-      <ColorItem color={ColorPalette.lightGray} name='lightGray' />
-      <ColorItem color={ColorPalette.bitterSweet} name='bitterSweet' />
-      <ColorItem color={ColorPalette.jittaBlue} name='jittaBlue' />
-      <ColorItem color={ColorPalette.selectiveYellow} name='selectiveYellow' />
+      <ColorItem color={Color.Palette.caribbeanGreen} name='caribbeanGreen' />
+      <ColorItem color={Color.Palette.black} name='black' />
+      <ColorItem color={Color.Palette.white} name='white' />
+      <ColorItem color={Color.Palette.baliHai} name='baliHai' />
+      <ColorItem color={Color.Palette.pickledBluewood} name='pickledBluewood' />
+      <ColorItem color={Color.Palette.geyser} name='geyser' />
+      <ColorItem color={Color.Palette.lightGray} name='lightGray' />
+      <ColorItem color={Color.Palette.bitterSweet} name='bitterSweet' />
+      <ColorItem color={Color.Palette.jittaBlue} name='jittaBlue' />
+      <ColorItem color={Color.Palette.selectiveYellow} name='selectiveYellow' />
     </ScrollView>
   ))
   .add('Color Scheme', () => (
     <ScrollView>
-      <ColorItem color={Color(ColorScheme.titlePrimary)} name='titlePrimary' />
-      <ColorItem color={Color(ColorScheme.labelPrimary)} name='labelPrimary' />
-      <ColorItem color={Color(ColorScheme.labelSecondary)} name='labelSecondary' />
-      <ColorItem color={Color(ColorScheme.labelTertiary)} name='labelTertiary' />
-      <ColorItem color={Color(ColorScheme.labelPositive)} name='labelPositive' />
-      <ColorItem color={Color(ColorScheme.labelNegative)} name='labelNegative' />
-      <ColorItem color={Color(ColorScheme.textFieldPrimary)} name='textFieldPrimary' />
-      <ColorItem color={Color(ColorScheme.textFieldPositive)} name='textFieldPositive' />
-      <ColorItem color={Color(ColorScheme.textFieldNegative)} name='textFieldNegative' />
-      <ColorItem color={Color(ColorScheme.placeholder)} name='placeholder' />
-      <ColorItem color={Color(ColorScheme.separatorPrimary)} name='separatorPrimary' />
-      <ColorItem color={Color(ColorScheme.separatorSecondary)} name='separatorSecondary' />
-      <ColorItem color={Color(ColorScheme.tintPrimary)} name='tintPrimary' />
-      <ColorItem color={Color(ColorScheme.tintPositive)} name='tintPositive' />
-      <ColorItem color={Color(ColorScheme.tintNegative)} name='tintNegative' />
-      <ColorItem color={Color(ColorScheme.backgroundPrimary)} name='backgroundPrimary' />
-      <ColorItem color={Color(ColorScheme.backgroundSecondary)} name='backgroundSecondary' />
-      <ColorItem color={Color(ColorScheme.backgroundTertiary)} name='backgroundTertiary' />
-      <ColorItem color={Color(ColorScheme.buttonBackgroundPrimary)} name='buttonBackgroundPrimary' />
-      <ColorItem color={Color(ColorScheme.linkPrimary)} name='linkPrimary' />
-      <ColorItem color={Color(ColorScheme.cameraBackground)} name='cameraBackground' />
-      <ColorItem color={Color(ColorScheme.cameraButton)} name='cameraButton' />
+      <ColorItem color={Color(Color.Scheme.titlePrimary)} name='titlePrimary' />
+      <ColorItem color={Color(Color.Scheme.labelPrimary)} name='labelPrimary' />
+      <ColorItem color={Color(Color.Scheme.labelSecondary)} name='labelSecondary' />
+      <ColorItem color={Color(Color.Scheme.labelTertiary)} name='labelTertiary' />
+      <ColorItem color={Color(Color.Scheme.labelPositive)} name='labelPositive' />
+      <ColorItem color={Color(Color.Scheme.labelNegative)} name='labelNegative' />
+      <ColorItem color={Color(Color.Scheme.textFieldPrimary)} name='textFieldPrimary' />
+      <ColorItem color={Color(Color.Scheme.textFieldPositive)} name='textFieldPositive' />
+      <ColorItem color={Color(Color.Scheme.textFieldNegative)} name='textFieldNegative' />
+      <ColorItem color={Color(Color.Scheme.placeholder)} name='placeholder' />
+      <ColorItem color={Color(Color.Scheme.separatorPrimary)} name='separatorPrimary' />
+      <ColorItem color={Color(Color.Scheme.separatorSecondary)} name='separatorSecondary' />
+      <ColorItem color={Color(Color.Scheme.tintPrimary)} name='tintPrimary' />
+      <ColorItem color={Color(Color.Scheme.tintPositive)} name='tintPositive' />
+      <ColorItem color={Color(Color.Scheme.tintNegative)} name='tintNegative' />
+      <ColorItem color={Color(Color.Scheme.backgroundPrimary)} name='backgroundPrimary' />
+      <ColorItem color={Color(Color.Scheme.backgroundSecondary)} name='backgroundSecondary' />
+      <ColorItem color={Color(Color.Scheme.backgroundTertiary)} name='backgroundTertiary' />
+      <ColorItem color={Color(Color.Scheme.buttonBackgroundPrimary)} name='buttonBackgroundPrimary' />
+      <ColorItem color={Color(Color.Scheme.linkPrimary)} name='linkPrimary' />
+      <ColorItem color={Color(Color.Scheme.cameraBackground)} name='cameraBackground' />
+      <ColorItem color={Color(Color.Scheme.cameraButton)} name='cameraButton' />
     </ScrollView>
   ))
 

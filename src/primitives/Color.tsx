@@ -1,7 +1,7 @@
 import { ReactText } from 'react'
 
 // MARK: - Palette
-export const ColorPalette = {
+const ColorPalette = {
   caribbeanGreen: '#00C5AC',
   black: '#000000',
   white: '#FFFFFF',
@@ -14,7 +14,7 @@ export const ColorPalette = {
   selectiveYellow: '#FFCF61'
 }
 
-const GradientPallete = {
+const GradientPalette = {
   navigationGradient: {
     colors: ['#00D7BE', '#00C9F0'],
     locations: [0, 0.9933],
@@ -65,14 +65,14 @@ const Theme = {
   },
 
   gradients: {
-    labelGradient: GradientPallete.jittaWealthGradient,
-    buttonBackgroundGradientPrimary: GradientPallete.jittaWealthGradient,
-    backgroundGradient: GradientPallete.jittaWealthGradient
+    labelGradient: GradientPalette.jittaWealthGradient,
+    buttonBackgroundGradientPrimary: GradientPalette.jittaWealthGradient,
+    backgroundGradient: GradientPalette.jittaWealthGradient
   }
 }
 
 // MARK: - Color Schemes
-export enum ColorScheme {
+enum ColorScheme {
   titlePrimary = 'titlePrimary',
   labelPrimary = 'labelPrimary',
   labelSecondary = 'labelSecondary',
@@ -97,17 +97,25 @@ export enum ColorScheme {
   cameraButton = 'cameraButton',
 }
 
-export enum GradientScheme {
+enum GradientScheme {
   labelGradient = 'labelGradient',
   buttonBackgroundGradientPrimary = 'buttonBackgroundGradientPrimary',
   backgroundGradient = 'backgroundGradient'
 }
 
 // MARK: - Main
-export const Color = (scheme: ColorScheme): ReactText => {
+const Color = (scheme: ColorScheme): ReactText => {
   return Theme.colors[scheme]
 }
 
-export const Gradient = (scheme: GradientScheme): GradientCompatible => {
+Color.Palette = ColorPalette
+Color.Scheme = ColorScheme
+
+const Gradient = (scheme: GradientScheme): GradientCompatible => {
   return Theme.gradients[scheme]
 }
+
+Gradient.Palette = GradientPalette
+Gradient.Scheme = GradientScheme
+
+export { Color, Gradient }

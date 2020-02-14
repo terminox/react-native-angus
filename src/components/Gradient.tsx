@@ -1,7 +1,7 @@
 import React, { ReactElement, ReactText } from 'react'
 import { View, Platform, MaskedViewIOS } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient'
-import { Gradient, GradientScheme, HStack } from '../primitives'
+import { Gradient, HStack } from '../primitives'
 
 interface GradientCompatible {
   colors?: ReactText[]
@@ -15,7 +15,7 @@ interface GradientElementProps {
 
 export const GradientText : React.SFC<GradientElementProps> = props => {
   const { children, gradientProps } = props
-  const { colors, locations, angle } = gradientProps ?? Gradient(GradientScheme.labelGradient)
+  const { colors, locations, angle } = gradientProps ?? Gradient(Gradient.Scheme.labelGradient)
 
   if (Platform.OS === 'android') {
     return children
@@ -39,7 +39,7 @@ export const GradientText : React.SFC<GradientElementProps> = props => {
 
 export const GradientBackground : React.SFC<GradientElementProps> = props => {
   const { children, gradientProps } = props
-  const { colors, locations, angle } = gradientProps ?? Gradient(GradientScheme.backgroundGradient)
+  const { colors, locations, angle } = gradientProps ?? Gradient(Gradient.Scheme.backgroundGradient)
 
   return (
     <LinearGradient style={{ flex: 1 }} colors={colors ?? []} locations={locations} angle={angle}>

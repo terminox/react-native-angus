@@ -1,4 +1,4 @@
-import { Color, ColorPalette, ColorScheme, Gradient, GradientScheme } from './Color'
+import { Color, Gradient } from './Color'
 import Font, { FontSize, FontWeight } from './Font'
 import Spacing from './Spacing'
 import { Spacer, applyHSpacer, applyVSpacer } from './Spacer'
@@ -17,10 +17,7 @@ import {
 
 export {
   Color,
-  ColorPalette,
-  ColorScheme,
   Gradient,
-  GradientScheme,
   Font,
   FontSize,
   FontWeight,

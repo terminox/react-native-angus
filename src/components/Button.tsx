@@ -4,7 +4,7 @@ import styled from 'styled-components/native'
 import { Button } from 'react-native-elements'
 import LinearGradient from 'react-native-linear-gradient'
 
-import { Color, Gradient, ColorScheme, GradientScheme, Font, Spacing, Callout } from '../primitives'
+import { Color, Gradient, Font, Spacing, Callout } from '../primitives'
 
 // MARK: - Interfaces
 interface ButtonProps {
@@ -15,11 +15,11 @@ interface ButtonProps {
 // MARK: - Main
 const GradientButton = styled(Button).attrs(() => {
   const ViewComponent = LinearGradient
-  const linearGradientProps = Gradient(GradientScheme.buttonBackgroundGradientPrimary)
+  const linearGradientProps = Gradient(Gradient.Scheme.buttonBackgroundGradientPrimary)
   const defaultProps = {
     containerStyle: {
       width: '100%',
-      backgroundColor: Color(ColorScheme.backgroundPrimary),
+      backgroundColor: Color(Color.Scheme.backgroundPrimary),
       paddingHorizontal: Spacing.semiLarge,
       paddingBottom: Spacing.semiLarge,
       paddingTop: Spacing.medium
@@ -41,7 +41,7 @@ const GradientButton = styled(Button).attrs(() => {
 })``
 
 const LinkText = styled(Callout)`
-  color: ${Color(ColorScheme.linkPrimary)};
+  color: ${Color(Color.Scheme.linkPrimary)};
   text-align: center;
 `
 
